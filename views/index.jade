@@ -1,0 +1,91 @@
+extends layout
+
+block content
+  .container
+    .row
+      .col-md-offset-4.col-md-4
+        .row
+          //- .col-md-12
+          img.cover(src='/img/cover1.png')
+         
+          .col-md-12.title
+            h1 LET'S GO
+            h4 七牛混合水印 Demo
+            //- h4 一，二，三，生成你想要的头像.
+      
+          .col-md-12.page#step1
+            h4 第一步，上传头像(建议 290x290)：
+            .row
+            
+              #upload-wrapper-1.col-xs-4.form-group
+                button#uploadAvatar.btn.btn-info.btn-lg.btn-block 点击上传
+                #progess-1
+                #error-1
+              div.col-xs-8
+                img#avatar-preview( style="border:2px solid white;width:100%",src='http://needkane.qiniudn.com/QQ?imageMogr2/thumbnail/290x290!')
+
+          //- .col-md-12(style='text-align:center')
+          //-   img.next(src='/img/next.png')
+
+          .col-md-12.page#step2
+            h4 第二步，选择信息背景色:
+            .row
+              div.msg-bg.col-xs-4
+                img#msg-bg1.circle(src='http://needkane.qiniudn.com/r.png?imageView2/2/w/110')
+                div.bg-check(style="display:block;")
+                  img(src='http://needkane.qiniudn.com/nike?imageView2/2/w/30')
+              div.msg-bg.col-xs-4
+                img#msg-bg2.circle(src='http://needkane.qiniudn.com/o.png?imageView2/2/w/110')
+                div.bg-check
+                  img(src='http://needkane.qiniudn.com/nike?imageView2/2/w/30')
+              div.msg-bg.col-xs-4
+                img#msg-bg3.circle(src='http://needkane.qiniudn.com/p.png?imageView2/2/w/110')
+                div.bg-check
+                  img(src='http://needkane.qiniudn.com/nike?imageView2/2/w/30')
+          //- .col-md-12(style='text-align:center')
+          //-   img.next(src='/img/next.png')
+
+          .col-md-12.page#step3
+            h4 第三步，设置信息条数:
+            .row
+              .col-xs-12
+                div
+                  input#num.form-control(value='1', placeholder="数字1-999 OR 任意汉字(最多两个)")
+                  h5 数字1-999 OR 任意汉字(最多两个)
+              //- .col-xs-6
+              //-   div
+              //-     h5 数字1-999 OR 任意汉字(最多两个)
+            
+          //- .col-md-12(style='text-align:center')
+          //-   img.next(src='/img/next.png')
+    
+          .col-md-12#step5
+            button#btn.btn.btn-success.btn-lg.btn-block 点我马上生成微信【新消息】头像 
+            .waiting-wrapper
+              h2(style='color:white, text-align:center') 正在生成中...请耐心等待...
+            .result-wrapper(style="text-align:center")
+              h2 微信【新消息头】头像～拿好不谢～～
+              p(style='color:white')
+                //- a#download.btn.btn-info.btn-sm 下载原图
+                //- | 点击“下载原图”的按钮，将装逼图分享到朋友圈，完成人生巅峰的事情就在此刻～
+                | 长按图片保存，并将此图换为新头像，调戏好友必备
+              br
+              img#demo(src='')
+
+//- block content
+//-   .phone-view
+//-     .page#page1
+//-       img.cover(src='/img/cover1.png')
+//-     .page#page2
+//-       img.cover(src='/img/cover2.png')
+//-     .page#page3
+//-       h4 请选择装逼场景
+//-       button#load.btn.btn-primary 春节度假装逼版
+//-       button#load.btn.btn-primary 春晚吐槽装逼版
+//-       button#load.btn.btn-primary 土豪红包装逼版
+//-     .page#page4
+//-       h4 请选择装逼场景2
+//-     .page#page5
+//-       h4 请选择装逼场景3
+//-     .page#page6
+//-       h4 请选择装逼场景4

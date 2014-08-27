@@ -1,0 +1,106 @@
+body {
+  /*padding: 50px;*/
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /*background: url(../img/web-bg.png);*/
+  background-color: #EE4D6E !important;
+  padding-bottom: 50px;
+}
+
+a {
+  color: #00B7FF;
+}
+h1,h2,h3,h4,h5 {
+  color: white !important;
+}
+
+.title {
+  margin-bottom: 30px;
+}
+
+.title h4 {
+  font-size: 16px;
+  color: white;
+  padding-bottom: 6px;
+}
+
+.page {
+  margin: 30px 0;
+  padding: 30px 0;
+}
+
+.page h4 {
+  margin-bottom: 20px;
+}
+
+.container {
+    background-color: #EE4D6E;
+}
+.col-md-12.page {
+    min-height: 200px;
+}
+.tmpl-wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.load-tmpl {
+    margin-top: 30px !important;
+}
+.comment .msg {
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+.photo-preview-wrapper {
+    display: none;
+}
+.cover {
+    height: 100%;
+    width: 100%;
+    border: 0px;
+}
+.result-wrapper, .waiting-wrapper {
+    display: none;
+}
+#post {
+    min-height: 120px;
+}
+#add-like {
+    margin-bottom: 28px;
+}
+#btn {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+#download {
+    margin-right: 20px;
+}
+.next {
+  margin: 40px 20px;
+}
+#progess-1,
+#error-1,
+#progess-1,
+#error-1 {
+  color: white;
+}
+.msg-bg{
+  position: relative;
+  text-align:center;
+  cursor: pointer;
+}
+.msg-bg .circle{
+  
+  width: 100%
+}
+.bg-check{
+  position: absolute;
+  width: 25%;
+  right: 37.5%;
+  bottom: 33%;
+  display: none;
+}
+.bg-check img {
+  width: 100%;
+}
+#demo{
+  width: 80%;
+}

@@ -519,7 +519,7 @@ Q.initPluploader = function(browse_button_id, container_id, progress_id, error_i
         var link = 'http://zblq.qiniudn.com/';
         if (res.key.indexOf('avatar/') > -1) {
             Q.avatarUrl = link + res.key;
-            $('#avatar-preview').attr('src', Q.avatarUrl + '?imageMogr2/thumbnail/290x290!');
+            $('#avatar-preview').attr('src', Q.avatarUrl + '?imageView2/1/w/290/h/290');
         } else if (res.key.indexOf('photo/') > -1) {
             Q.setPhoto(link + res.key);
         }
@@ -611,7 +611,7 @@ $(function() {
     // ------------------------------------------------
     var render = {};
     render.avatar = function(url) {
-        return Q.image(url + '?imageMogr2/thumbnail/290x290!');
+        return Q.image(url + '?imageView2/1/w/290/h/290');
     };
     render.msg = function(txt, fontsize, dx, dy) {
         return Q.text(txt, FONT, fontsize, 'white', dx, dy)
@@ -756,7 +756,6 @@ $(function() {
                 img.src = src;
                 $('#download').attr('href', src + '&download');
                 $('#demo').css({
-
                     "border": "solid 2px white"
                 });
                 $('.waiting-wrapper').hide();

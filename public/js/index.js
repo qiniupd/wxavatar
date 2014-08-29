@@ -104,7 +104,7 @@ var NAME_SIZE = 32,
     POST_SIZE = 28,
     LIKE_SIZE = 26,
     COMMENT_SIZE = 26;
-var MSG_BG = 'http://needkane.qiniudn.com/r.png?imageView2/2/w/110'
+var MSG_BG = 'http://needkane.qiniudn.com/r.png?imageView2/2/w/75'
 
 Q.utf8_encode = function(argString) {
     // http://kevin.vanzonneveld.net
@@ -519,7 +519,7 @@ Q.initPluploader = function(browse_button_id, container_id, progress_id, error_i
         var link = 'http://zblq.qiniudn.com/';
         if (res.key.indexOf('avatar/') > -1) {
             Q.avatarUrl = link + res.key;
-            $('#avatar-preview').attr('src', Q.avatarUrl + '?imageView2/1/w/290/h/290');
+            $('#avatar-preview').attr('src', Q.avatarUrl + '?imageView2/1/w/200/h/200');
         } else if (res.key.indexOf('photo/') > -1) {
             Q.setPhoto(link + res.key);
         }
@@ -611,7 +611,7 @@ $(function() {
     // ------------------------------------------------
     var render = {};
     render.avatar = function(url) {
-        return Q.image(url + '?imageView2/1/w/290/h/290');
+        return Q.image(url + '?imageView2/1/w/200/h/200');
     };
     render.msg = function(txt, fontsize, dx, dy) {
         return Q.text(txt, FONT, fontsize, 'white', dx, dy)
@@ -648,7 +648,7 @@ $(function() {
     };
 
     var buildURL = function() {
-        var BG = 'http://needkane.qiniudn.com/14.jpg';
+        var BG = 'http://needkane.qiniudn.com/34.jpg';
 
         var renderList = [],
             scanLine = 132;
@@ -670,20 +670,20 @@ $(function() {
             alert('信息数不在范围内');
             return false;
         }
-        var txt = render.msg(numTxt, 1400, 20, 15);
+        var txt = render.msg(numTxt, 1050, 10, 8);
         var re = /^[1-9]+[0-9]*]*$/;
         if (re.test(numTxt)) {
             switch (numTxt.length) {
                 case 1:
-                    txt = render.msg(numTxt, 1600, 32, 8);
+                    txt = render.msg(numTxt, 1300, 19, 3);
                     break;
                 case 3:
-                    txt = render.msg(numTxt, 1100, 10, 20);
+                    txt = render.msg(numTxt, 850, 5, 11);
                     break;
             }
         } else {
             if (numTxt.length == 2) {
-                txt = render.msg(numTxt, 930, 10, 27);
+                txt = render.msg(numTxt, 630, 5, 17);
             }
         }
 
